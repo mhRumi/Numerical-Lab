@@ -4,7 +4,6 @@ function retval =GaussJacobi(A, b)
   n = length(b); 
   x = zeros(n, 1);
   xnew = zeros(n, 1);
-  x(:) = 0
   
   for iteration = 1:20
     for i = 1:n
