@@ -1,7 +1,9 @@
-function value = Bisection(f, A, B)
-  c(1) = (A(1)+B(1))/2;
-  fa(1) = f(A(1));
-  fb(1) = f(B(1));
+function value = Bisection(f, a, b)
+  A(1) = a;
+  B(1) = b;
+  c(1) = (a+b)/2;
+  fa(1) = f(a);
+  fb(1) = f(b);
   fc(1) = f(c(1));
   
   for i = 2:20
